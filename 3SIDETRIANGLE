@@ -1,0 +1,46 @@
+Given two sides of a right triangle, represented by a and b, you must find c, the length of the third side rounded to 2 decimal places.
+If multiple solutions exist, the lowest one should be returned.
+Input
+Line 1: 2 floats, a and b, representing the lengths of two sides of the triangle, separated by a space.
+Output
+Line 1: A float, representing the length of the third side.
+Constraints
+0 < a <= 1000
+0 < b <= 1000
+
+A unique right triangle can always be formed from these 2 floats.
+Example
+Input
+1 2
+Output
+1.73
+
+#####################################
+code 
+
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdbool.h>
+#include <math.h>
+
+/**
+ * Auto-generated code below aims at helping you parse
+ * the standard input according to the problem statement.
+ **/
+
+int main()
+{
+    float a;
+    float b;
+    scanf("%f%f", &a, &b);
+    double res = 0;
+    if(a > b)
+        res = sqrt(a * a - b * b);
+    else
+        res = sqrt(b * b - a * a);
+
+    printf("%.2lf", res);
+
+    return 0;
+}
