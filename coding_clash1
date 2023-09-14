@@ -1,0 +1,47 @@
+#include <iostream>
+#include <string>
+#include <vector>
+#include <algorithm>
+#include<bits/stdc++.h>
+
+using namespace std;
+
+/**
+ * Auto-generated code below aims at helping you parse
+ * the standard input according to the problem statement.
+ **/
+
+int main()
+{
+    float a;
+    float b;
+    cin >> a >> b; cin.ignore();
+    float c;
+    float d;
+    cin >> c >> d; cin.ignore();
+
+    float a1,b1,c1,d1;
+    float det;
+
+    // Write an answer using cout. DON'T FORGET THE "<< endl"
+    // To debug: cerr << "Debug messages..." << endl;
+    if((a*d - b*c) != 0)
+    {
+        det = a*d - b*c;
+        a1 = d/det;
+        b1 =  -(b/det);
+        c1 = -(c/det);
+        d1 = a/det;
+
+        cout << fixed << setprecision(3) << a1  << " " << b1 <<endl;
+        cout << fixed << setprecision(3) << c1 << " " << d1 <<endl;
+
+
+    }
+    else
+    {
+        cout << "IMPOSSIBLE";
+    }
+
+    
+}
