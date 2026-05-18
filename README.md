@@ -11,10 +11,6 @@ The repo holds two kinds of problems mixed together:
 
 Each file/folder is named after the problem it solves. Most solutions are a single `.cpp` file; a few are in their own folder when they needed more than one file.
 
-## Why it's public
-
-Mostly so I have a record of my own work, and so anyone learning the same problems can see one possible approach. Solutions are not always the most optimal — they're whatever I came up with at the time.
-
 ## Building
 
 Any of the `.cpp` files can be compiled with a modern C++ compiler:
